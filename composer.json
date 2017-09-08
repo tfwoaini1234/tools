@@ -11,11 +11,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php":">=7.0.0"
+        "php":">=7.0.0",
+        "james-heinrich/getid3":"1.9.14"
     },
     "autoload":{
         "psr-4":{
-            "Tools\\Strings\\":"src/Tools/String"
+            "Tools\\Strings\\":"src/Tools/Strings",
+            "Tools\\Audio\\":"src/Tools/Audio"
         }
     }
 
