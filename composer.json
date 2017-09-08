@@ -15,7 +15,7 @@
     },
     "autoload":{
         "psr-4":{
-            "Tools\\Strings":"src/Tools/String"
+            "Tools\\Strings\\":"src/Tools/String"
         }
     }
 
