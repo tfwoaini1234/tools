@@ -6,7 +6,7 @@
  * Time: 14:47
  */
 
-namespace Tools\String;
+namespace Tools\Strings;
 
 
 class StringHandle
