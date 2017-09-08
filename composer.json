@@ -1,0 +1,21 @@
+{
+    "name": "zhaoxin/tools",
+    "description": "tool set",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tfwoaini1234",
+            "email": "zxchobits@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.0.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Tools\\String":"src/Tools/String"
+        }
+    }
+}
