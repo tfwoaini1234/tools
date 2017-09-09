@@ -17,7 +17,8 @@
     "autoload":{
         "psr-4":{
             "Tools\\Strings\\":"src/Tools/Strings",
-            "Tools\\Audio\\":"src/Tools/Audio"
+            "Tools\\Audio\\":"src/Tools/Audio",
+            "Tools\\Internet\\":"src/Tools/Internet"
         }
     }
 
