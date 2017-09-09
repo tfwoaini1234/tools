@@ -15,12 +15,41 @@ use getID3;
 
 class Music
 {
+    public $error;
+    private $fileInfo;
     public function doc(){
         echo "处理音频文件";
     }
-    public function test(){
+
+    /**
+     * @param $file_path
+     * @return $this
+     */
+    public function open($file_path){
+        if(empty($file_path)){
+            $this->error = "音频路径不能为空！";
+            return $this;
+        }
         $getID3 = new getID3;
+        $ThisFileInfo = $getID3->analyze($file_path);
+        if(!empty($ThisFileInfo['error'][0])){
+            $this->error = $ThisFileInfo['error'][0];
+            return $this;
+        }
+        $this->fileInfo = $ThisFileInfo;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTime(){
+        return empty($this->fileInfo['playtime_seconds'])?0:$this->fileInfo['playtime_seconds'];
+    }
+    public function test(){
+        $getID3 = new getID3();
         $ThisFileInfo = $getID3->analyze("demo.mp3");
+
         unset($ThisFileInfo['comments']['picture'][0]['data']);
         //var_dump($ThisFileInfo);
         var_dump($ThisFileInfo);
