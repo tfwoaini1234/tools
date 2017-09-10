@@ -22,10 +22,13 @@ class webCrawler
             if(stripos($txt,$url) !==false){
                 return false;
             }
+
             $html = file_get_contents($url);
             if(!empty($html)){
                 $hrefs = PregMatch::a($html);
+
                 $imgs = PregMatch::img($html);
+
                 //保存当前页面的图片
                 if(!empty($imgs)){
                     foreach($imgs as $k=>$v){
@@ -45,8 +48,10 @@ class webCrawler
                 if(!empty($hrefs)){
                     foreach($hrefs as $k=>$v){
                         //写入该url到txt中
+                        //var_dump($v);
                         $this->test($v);
-                        file_put_contents('urlList.txt','-'.$v.'-');
+                        file_put_contents('urlList.txt',$v."\r\n",FILE_APPEND);
+
 
                     }
                 }
