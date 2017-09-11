@@ -20,5 +20,10 @@
             "Tools\\Audio\\":"src/Tools/Audio",
             "Tools\\Internet\\":"src/Tools/Internet"
         }
+    } ,
+    "extra": {
+    "branch-alias": {
+        "1.0.x-dev": "1.0.0"
     }
+}
 }
