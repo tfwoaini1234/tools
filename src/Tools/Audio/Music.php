@@ -46,6 +46,15 @@ class Music
     public function getTime(){
         return empty($this->fileInfo['playtime_seconds'])?0:$this->fileInfo['playtime_seconds'];
     }
+
+    /**
+     * @创建人：赵心
+     * @功能描述 ：获取文件大小
+     * @返回类型 int
+     */
+    public function getSize(){
+        return empty($this->fileInfo['filesize'])?0:$this->fileInfo['filesize'];
+    }
     public function test(){
         $getID3 = new getID3();
         $ThisFileInfo = $getID3->analyze("demo.mp3");
