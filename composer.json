@@ -20,6 +20,7 @@
             "Tools\\Audio\\":"src/Tools/Audio",
             "Tools\\Internet\\":"src/Tools/Internet"
         }
-    }
+    },
+  "version":"0.0.1"
 
 }
