@@ -29,6 +29,11 @@ class PregMatch
         return array();
     }
 
+    /**
+     * 从字符串中匹配img标签中的src值
+     * @param $str
+     * @return array
+     */
     public static function img($str){
         if(!empty($str)){
             $num = preg_match_all('/<img(.*?)src="(.*?)"(.*?)\/>/i',$str,$matches);
