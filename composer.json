@@ -18,7 +18,8 @@
         "psr-4":{
             "Tools\\Strings\\":"src/Tools/Strings",
             "Tools\\Audio\\":"src/Tools/Audio",
-            "Tools\\Internet\\":"src/Tools/Internet"
+            "Tools\\Internet\\":"src/Tools/Internet",
+            "Tools\\Arrays\\":"src/Tools/Arrays"
         }
     }
 }
