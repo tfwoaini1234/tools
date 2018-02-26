@@ -41,4 +41,14 @@ class Arrays
         krsort($this->array);
     }
 
+    //删除根据值删除数组中的对应值
+    public function delValueByValue($value){
+        foreach($this->array as $k =>$v){
+            if($v == $value){
+                unset($this->array[$k]);
+            }
+        }
+        return $this->array;
+    }
+
 }
