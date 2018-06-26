@@ -12,14 +12,16 @@
     "minimum-stability": "dev",
     "require": {
         "php":">=7.0.0",
-        "james-heinrich/getid3":"1.9.14"
+        "james-heinrich/getid3":"1.9.14",
+        "chillerlan/php-qrcode": "2.0.6"
     },
     "autoload":{
         "psr-4":{
             "Tools\\Strings\\":"src/Tools/Strings",
             "Tools\\Audio\\":"src/Tools/Audio",
             "Tools\\Internet\\":"src/Tools/Internet",
-            "Tools\\Arrays\\":"src/Tools/Arrays"
+            "Tools\\Arrays\\":"src/Tools/Arrays",
+            "Tools\\Image\\":"src/Tools/Image"
         }
     }
 }
