@@ -7,7 +7,7 @@
  * 时间处理类
  */
 
-namespace Tools\Strings;
+namespace Tools\Date;
 
 
 class Time
