@@ -42,6 +42,21 @@ class StringHandle
         }
     }
 
+    /**
+     * createUUID 创建UUID
+     * @returns String $uuid  返回字符串
+     */
+    public static function createUUID()
+    {
+        $str = mt_rand(1, 2) == 1 ? md5(mt_rand(1, 2) == 1 ? md5(md5(uniqid(mt_rand(), true))) : md5(uniqid(mt_rand(), true))) : mt_rand(1, 2) == 1 ? md5(md5(uniqid(mt_rand(), true))) : md5(uniqid(mt_rand(), true));
+        $uuid = substr($str, 0, 8) . '-';
+        $uuid .= substr($str, 8, 4) . '-';
+        $uuid .= substr($str, 12, 4) . '-';
+        $uuid .= substr($str, 16, 4) . '-';
+        $uuid .= substr($str, 20, 12);
+        return $uuid;
+    }
+
 
 
 
