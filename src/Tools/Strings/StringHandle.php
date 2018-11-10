@@ -57,6 +57,20 @@ class StringHandle
         return $uuid;
     }
 
+    /**
+     * 格式化金额
+     * @param $price
+     * @param $type
+     * @return string
+     */
+    public static function price_format($price,$type){
+        if($type){
+            return number_format($price,2);
+        }else{
+            return number_format($price);
+        }
+    }
+
 
 
 
