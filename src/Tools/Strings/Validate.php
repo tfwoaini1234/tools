@@ -168,7 +168,7 @@ class Validate
     public static function isMobile($str)
     {
 
-        $result = preg_match('/^(13|14|15|18|17)[0-9]{9}$/i', $str);
+        $result = preg_match('/^(13|14|15|18|17|19)[0-9]{9}$/i', $str);
         if ($result) {
             return true;
         } else {
