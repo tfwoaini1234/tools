@@ -8,3 +8,6 @@ demo.jpg
 urlList.txt
 /.idea/
 .idea
+log
+/log
+./log/
