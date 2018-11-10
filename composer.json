@@ -13,7 +13,8 @@
     "require": {
         "php":">=7.0.0",
         "james-heinrich/getid3":"1.9.14",
-        "chillerlan/php-qrcode": "2.0.6"
+        "chillerlan/php-qrcode": "2.0.6",
+        "monolog/monolog": "1.24.0"
     },
     "autoload":{
         "psr-4":{
@@ -21,8 +22,11 @@
             "Tools\\Audio\\":"src/Tools/Audio",
             "Tools\\Internet\\":"src/Tools/Internet",
             "Tools\\Arrays\\":"src/Tools/Arrays",
+            "Tools\\Log\\":"src/Tools/Log",
             "Tools\\Date\\":"src/Tools/Date",
             "Tools\\Image\\":"src/Tools/Image"
         }
+    },
+    "require-dev": {
     }
 }
