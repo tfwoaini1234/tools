@@ -39,4 +39,12 @@ class HttpTools
         return $res; // 返回数据，json格式
 
     }
+
+    public static function isUrl($url){
+        $url = ltrim($url,'http://');
+        if(!preg_match('/[\w.]+[\w\/]*[\w.]*\??[\w=&\+\%]*/is',$url)){
+            return false;
+        }
+        return true;
+    }
 }
